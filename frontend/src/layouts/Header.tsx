@@ -30,10 +30,10 @@ function Header({ onToggleSidebar, breadcrumb = ['Dashboard'] }: HeaderProps) {
   };
 
   return (
-    <div className='bg-white/-80 dark:bg-slate-800 backdrop-blur-xl px-6 py-4 border-slate-200 dark:border-slate-700/50 border-b'>
-      <div className='flex justify-between items-center'>
+    <div className='flex bg-white/-80 dark:bg-slate-800 backdrop-blur-xl px-6 py-2 border-slate-200 dark:border-slate-700/50 border-b min-h-20'>
+      <div className='flex justify-between items-center w-full'>
         {/* left */}
-        <div className='flex items-center space-x-4'>
+        <div className='flex items-center space-x-4 w-full'>
           <Button
             isIconOnly
             variant="light"

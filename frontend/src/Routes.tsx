@@ -26,7 +26,7 @@ export const routes = [
   },
   {
     id: "zoning",
-    label: "Zoning",
+    label: "Zoning Clearance",
     icon: Locate,
     subItems: [
       {
@@ -45,7 +45,7 @@ export const routes = [
   },
   {
     id: "building",
-    label: "Building",
+    label: "Building Review",
     icon: HardHat,
     subItems: [
       {
@@ -57,21 +57,8 @@ export const routes = [
     ],
   },
   {
-    id: "coordination",
-    label: "Coordination",
-    icon: Briefcase,
-    subItems: [
-      {
-        id: "coordination-dashboard",
-        path: "/coordination/dashboard",
-        label: "Dashboard",
-        element: <CoordinationDashboard />,
-      },
-    ],
-  },
-  {
     id: "housing",
-    label: "Housing",
+    label: "Housing Beneficiary",
     icon: Home,
     subItems: [
       {
@@ -84,7 +71,7 @@ export const routes = [
   },
   {
     id: "occupancy",
-    label: "Occupancy",
+    label: "Occupancy Monitoring",
     icon: Building,
     subItems: [
       {
@@ -92,6 +79,19 @@ export const routes = [
         path: "/occupancy/dashboard",
         label: "Dashboard",
         element: <OccupancyDashboard />,
+      },
+    ],
+  },
+  {
+    id: "coordination",
+    label: "Project Coordination",
+    icon: Briefcase,
+    subItems: [
+      {
+        id: "coordination-dashboard",
+        path: "/coordination/dashboard",
+        label: "Dashboard",
+        element: <CoordinationDashboard />,
       },
     ],
   },
